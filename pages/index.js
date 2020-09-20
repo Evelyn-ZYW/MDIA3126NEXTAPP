@@ -1,65 +1,57 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import header from 'next/head'
+import styles from './App.module.css'
+
+import Header from '../comps/Header';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div>
+        <div className={styles.header1}>
+          <h3>Average Income</h3>
+          <p>The amount of money an individual, family, or household makes in Canada.</p>
         </div>
-      </main>
+        <div className={styles.middle1}>
+          <div className={styles.middle2}>
+            <div>
+              <span className={styles.square_blue}></span>
+              <span className={styles.header2}>Average Income for the Region</span>
+              <span className={styles.square_yellow}></span>
+              <span className={styles.header2}>Average Income National</span>
+            </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+            <div className={styles.box}>$52,023</div>
+
+            <span className={styles.rect_blue}></span>
+            <span className={styles.rect_yellow}></span>
+            <span className={styles.h_line}></span>
+            <div className={styles.vectors}>
+              <span className={styles.vector1}></span>
+              <span className={styles.vector2}></span>
+              <span className={styles.vector3}></span>
+              <span className={styles.vector4}></span>
+              <span className={styles.vector5}></span>
+              <span className={styles.vector6}></span>
+              <span className={styles.vector7}></span>
+            </div>
+            <div className={styles.nums}>
+              <span className={styles.num1}>0</span>
+              <span className={styles.num2}>10,000</span>
+              <span className={styles.num3}>20,000</span>
+              <span className={styles.num4}>30,000</span>
+              <span className={styles.num5}>40,000</span>
+              <span className={styles.num6}>50,000</span>
+              <span className={styles.num7}>60,000</span>
+              <span className={styles.num8}>70,000</span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </div>
+
+
   )
 }
