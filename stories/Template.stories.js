@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import Header from '../comps/Header';
 
 export default {
@@ -12,3 +12,4 @@ export const ColorHeader = () => <Header
 color="#3F3"
 highlight={true}
 />;
+*/
