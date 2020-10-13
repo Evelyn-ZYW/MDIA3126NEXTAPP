@@ -1,20 +1,101 @@
-.home {
-  .menu {
+html body {
+ margin: 0;
+}
+.app {
+  font-family: roboto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home1 {
+  width:1451px;
+  height: 967px;
+  margin-bottom: 20px;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+.form1 {
+  position: relative;
+  left: 20%;
+  top: 20%;
+}
+}
+
+.home2 {
+  width:1451px;
+  height: 967px;
+  margin-bottom: 20px;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+
+  .form2 {
     position: relative;
-    z-index:1;
+    top: 250px;
+    left: 20%;
+
   }
-  .content {
-    position: fixed;
-    left:0;
-    top:0;
-    width: 100vw;
-    height: 100vh;
-    z-index:-1;
-
-
-    & > div {
-      @include flexIt();
-      flex-direction: column;
-    }
+  .hero2 {
+  position: absolute;
+  left: 36.3%;
   }
 }
+
+.home3 {
+  width:1451px;
+  height: 967px;
+  border: 1px solid pink;
+  // display: flex;
+  &>div {
+    flex-direction: column;
+  }
+  .nav {
+    position: absolute;
+    width: 1451px;
+    // border: 1px solid black;
+    z-index: 1;
+  }
+  .left {
+    box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.08);
+    // border: 1px solid black;
+    width:212px;
+    height:967px;
+    position: absolute;
+    & > div {
+      margin: 30px;
+      position: relative;
+      top: 70px;
+    }
+  }
+  .right {
+    position: relative;
+    width: 1239px;
+    height: 967px;
+    left:212px;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .msg {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+    }
+    .tutor {
+      position: absolute;
+      bottom:10px;
+      right: 30px;;
+    }
+  }
+
+
+}
+
